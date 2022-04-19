@@ -13,7 +13,7 @@
 | 5    | 3 月 22 日 | 实践作业 3 Github Pages（分享与答疑）         |
 | 6    | 3 月 29 日 | 实践作业 4 Github Trend                       |
 | 7    | 4 月 5 日  | 放假                                          |
-| 8    | 4 月 12 日 |                                               |
+| 8    | 4 月 12 日 | 实践作业 4 Github Trend（分享与答疑）         |
 | 9    | 4 月 19 日 | 期中任务-协作翻译                             |
 | 10   | 4 月 26 日 |                                               |
 | 11   | 5 月 3 日  |                                               |
@@ -117,10 +117,42 @@
 
 也可以参考一些网站提供的热度排名，比如 [GitHunt – Trending Github Repositories](https://kamranahmed.info/githunt/)，有更具体的时序数据。
 
+## 实践作业 5 Github Action
+
+实践概述： 创建一个仓库，存放至少一个 markdown 文件，借助 Github Action 的功能来实现自动格式转化。
+
+具体表现为：每次 push 更新 markdown 的时候，Action 自动重新转换这个文件构建新的 pdf 存放到项目的 release 当中。
+
+实践步骤：
+
+- 创建仓库，命名不限。
+- push 一个 markdown 文件到当前仓库中，内容随意，不建议太短。
+- 在 `.github/workflows` 目录下创建 `your-action.yml` 配置本项目的流水线。（这一步会比较花时间）
+- 在正确配置以后，push 更新 markdown 的内容，查看 Actions 页面是否增加了流水线的记录。（[类似这样](https://github.com/TieWay59/tw59-ghaction-playground/actions)）
+
+参考资料：
+
+- [GitHub Actions 的工作流程语法 - GitHub Docs](https://docs.github.com/cn/actions/using-workflows/workflow-syntax-for-github-actions)
+- [助教曾写过的一份流水线配置](https://github.com/TieWay59/tw59-ghaction-playground/blob/main/.github/workflows/build-code-book-action.yml)
+
+提交形式：**在指定 issue 内** 评论自己的仓库链接与学号。
+
+截止时间：下次课程前一天晚上 24:00 点前。（一周时间）
+
+其他信息：
+
+Action 可以理解为一次性地租用 Github 的服务器，你可以配置这个服务器安装什么环境，执行什么命令。并且默认地，你的仓库的代码会存在于这个服务器当中。
+
+当你有了环境和执行命的条件，就可以把许多重复性的任务从本地转移到服务器上。
+
+比如要构建一个 release，可能每次更新都要重新构建，如果手动操作再上传的话，会有本地环境的不确定性，并且很麻烦。Action 就能解决这个问题。
+
+当然，转化 markdown 并不复杂，当项目的编译过程更加复杂的时候，手动的代价就更高了。
+
+网络上进行转化的方案有很多，甚至有现成的 Action 可以直接调用，同学可以根据自己情况选择适合的方案。常见的方案是借助 python 或者 pandoc 的 Action 指令。
+
+感兴趣的话，而可以尝试更进阶的主题：借助脚本，合并多个 md 文档，产出一个 pdf。
+
 ## Pull Request
-
-设计一个任务。
-
-## Github Action
 
 设计一个任务。
