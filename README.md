@@ -334,4 +334,4 @@ docker pull xlab-registry.cn-shanghai.cr.aliyuncs.com/opendigger/github-log-arch
 
 [开源课程实践指南 (shimo.im)](https://shimo.im/docs/XKq4MybL2bU9dKkN/read)
 
-[GitHub 协作指南.pdf](https://uploader.shimo.im/f/uP75RCfiUHJtHQYC.pdf?fileGuid=16q8MyXbRyTGNRk7)
+[GitHub 协作指南.pdf - (shimo.im)](https://uploader.shimo.im/f/uP75RCfiUHJtHQYC.pdf?fileGuid=16q8MyXbRyTGNRk7)
