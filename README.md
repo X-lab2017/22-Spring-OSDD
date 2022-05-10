@@ -16,10 +16,10 @@
 | 8    | 4 月 12 日 | 实践作业 4 Github Trend（分享与答疑）         |
 | 9    | 4 月 19 日 | 实践作业 5 Github Action                      |
 | 10   | 4 月 26 日 | 实践作业 6 期中报告                           |
-| 11   | 5 月 3 日  |                                               |
-| 12   | 5 月 10 日 |                                               |
-| 13   | 5 月 17 日 |                                               |
-| 14   | 5 月 24 日 |                                               |
+| 11   | 5 月 3 日  | 放假                                          |
+| 12   | 5 月 10 日 | 实践作业 7 期末报告                           |
+| 13   | 5 月 17 日 | 实践作业 7 期末报告答疑                       |
+| 14   | 5 月 24 日 | 实践作业 7 期末报告答疑                       |
 
 ## 作业完成情况
 
@@ -198,6 +198,140 @@ GSoC 项目：<https://summerofcode.withgoogle.com/programs/2022/organizations>
 
 截止时间：下一周周末（五月八日）23:00 点
 
-## Pull Request
+## 实践作业 7 归档开源项目分析
 
-设计一个任务。
+根据官方的解释，归档（Archive）是指当项目停止维护后将其设置为“只读”状态。
+
+附录中提供了一批曾高度流行的 GitHub 归档项目列表，每位同学从其中选择一个项目进行分析，不能重复选择。
+
+选择项目：
+
+[Assignment-6 · Issue #27 · TieWay59/22-Spring-OSDD (github.com)](https://github.com/TieWay59/22-Spring-OSDD/issues/27)
+
+回复 issue 以选用项目，格式为 `<序号> <项目id> <项目名>`，例如：`3 2935735 adobe/brackets`
+
+提交文件：
+
+- `<学号>-final-report.md`
+- `<学号>-data.ipynb` （根据选做情况可以没有）
+
+请在 5 月 25 日（最后一次课之后）前提交到课程仓库。
+
+提交形式：
+
+- fork 课程仓库。
+- clone 自己的 fork 到电脑。
+- 创建分支 `<学号>-final-report`。
+- 把文件加入到 `./final-report` 目录下。
+- commit， push。
+- 在 GitHub 上上传分支，等待助教合入。
+
+报告内容：
+
+### 一、项目的基本背景和发展历程介绍 （必做）
+
+通过项目仓库的查阅，以及搜索引擎上项目的相关资料，给出项目一些基本的介绍：
+
+- 技术类型
+- 版本发布历史
+- 主要贡献者的构成（国家、区域和组织等）
+- CI/CD 的使用
+- 其他有价值的信息
+
+### 二、项目的历史轨迹分析（选做部分）
+
+> 本节可以选做（0~8 个），本次作业会按照做的数量给予更高的评分。
+
+基于给出的镜像数据和 OpenDigger，完成项目 **2015 年/创建 - 归档**期间的以下数据分析任务：
+
+1. 每月新增 Star 和 Frok 的个数
+2. 每月打开 Issue 和 关闭 Issue 的个数
+3. 每月打开 PR 和 **合入** PR 的个数（注意，关闭 PR 不等于合入）
+4. 每月在仓库中活跃（只要有日志产生就算）的不同开发者（也就是一个 GitHub 账号）总数
+5. Issue 从打开到关闭的平均时长和中位数（单位：天）
+6. PR 从打开到合入的平均时长和中位数（单位：天）
+7. Issue 和 PR 从打开到第一次有人回复（非本人回复）的平均时长和中位数（单位：天）
+8. 根据你观察到的仓库的历史数据，尝试找到几个你认为关键或值得注意的时间节点
+   说明：
+
+- 对于任务 1-4，数据结果展示以月为单位，给出每月数量的曲线图和表格
+- 对于任务 5-7，数据结果展示以天为单位，仅给出数值即可
+- 对于第二块的数据分析内容，交付形式为一份 jupyter 文件
+- 镜像中提供了一共 172 个归档项目数据，有兴趣的话欢迎探索单个项目以外的横向对比分析
+
+数据镜像的获取方式：（前提: 本地需要安装 docker 环境）
+
+```plain
+docker pull xlab-registry.cn-shanghai.cr.aliyuncs.com/opendigger/github-log-archive:202204
+```
+
+### 三、洞察项目被归档的可能原因（必做）
+
+- 阅读分析项目的相关信息：
+  - 主页、主要贡献者发表的相关技术博客
+  - Issue 和 PR 中的相关讨论
+  - README 文件，贡献者指南，Code of Conduct 及其他可能有的相关文档
+- 结合一和二中得到的信息和分析结果，尝试总结项目可能的归档原因
+- 结合你搜集到的信息，尝试分析项目归档后可能产生的影响（对开发者和用户）
+- 表述你对开源项目如何可持续发展的理解
+
+### 参考资料
+
+[https://github.blog/2017-11-08-archiving-repositories/](https://github.blog/2017-11-08-archiving-repositories/)
+
+[https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories](https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories)
+
+[https://tommcfarlin.com/why-im-archiving-my-github-repositories/](https://tommcfarlin.com/why-im-archiving-my-github-repositories/)
+
+[https://iliana.fyi/blog/everything-that-lives-is-designed-to-end/](https://iliana.fyi/blog/everything-that-lives-is-designed-to-end/)
+
+### 附录 1 - 归档项目列表
+
+| 序号 | 项目 id   | 项目名                                                                                                                                |
+| :--- | :-------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | 460078    | angular/angular.js                                                                                                                    |
+| 2    | 80276391  | GitSquared/edex-ui                                                                                                                    |
+| 3    | 2935735   | adobe/brackets                                                                                                                        |
+| 4    | 1129010   | blueimp/jQuery-File-Upload                                                                                                            |
+| 5    | 2579314   | fzaninotto/Faker                                                                                                                      |
+| 6    | 18044526  | StreisandEffect/streisand                                                                                                             |
+| 7    | 23141830  | paularmstrong/normalizr                                                                                                               |
+| 8    | 38380854  | dnSpy/dnSpy                                                                                                                           |
+| 9    | 18275356  | facebookarchive/pop                                                                                                                   |
+| 10   | 3122202   | Reactive-Extensions/RxJS                                                                                                              |
+| 11   | 32665718  | railsware/upterm                                                                                                                      |
+| 12   | 3755875   | Prinzhorn/skrollr                                                                                                                     |
+| 13   | 21399598  | angular/material                                                                                                                      |
+| 14   | 24186761  | Kotlin/anko                                                                                                                           |
+| 15   | 46806184  | helm/charts                                                                                                                           |
+| 16   | 45147841  | facebookarchive/prepack                                                                                                               |
+| 17   | 78186814  | apache/incubator-weex                                                                                                                 |
+| 18   | 92104803  | mozilla/send                                                                                                                          |
+| 19   | 7827081   | apache/predictionio                                                                                                                   |
+| 20   | 4702560   | PHPOffice/PHPExcel                                                                                                                    |
+| 21   | 156648725 | eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee |
+| 22   | 2874001   | chrisbanes/Android-PullToRefresh                                                                                                      |
+| 23   | 268027    | carhartl/jquery-cookie                                                                                                                |
+| 24   | 73902337  | vmware-archive/kubeless                                                                                                               |
+| 25   | 83285138  | alibaba/vlayout                                                                                                                       |
+| 26   | 38066334  | facebookarchive/caffe2                                                                                                                |
+| 27   | 70202506  | golang/dep                                                                                                                            |
+| 28   | 124492610 | xiandanin/magnetW                                                                                                                     |
+| 29   | 1136075   | cubiq/iscroll                                                                                                                         |
+| 30   | 50807547  | turbolinks/turbolinks                                                                                                                 |
+| 31   | 15345331  | boltdb/bolt                                                                                                                           |
+| 32   | 22282353  | vicc/chameleon                                                                                                                        |
+| 33   | 47690142  | CoatiSoftware/Sourcetrail                                                                                                             |
+| 34   | 11290232  | flynn/flynn                                                                                                                           |
+| 35   | 4931659   | Netflix/SimianArmy                                                                                                                    |
+| 36   | 75566993  | openai/universe                                                                                                                       |
+| 37   | 2328523   | casperjs/casperjs                                                                                                                     |
+| 38   | 5279091   | square/dagger                                                                                                                         |
+| 39   | 59939691  | yhatt/marp                                                                                                                            |
+| 40   | 68627122  | GetStream/Winds                                                                                                                       |
+
+### 附录 2 - 操作手册
+
+[开源课程实践指南 (shimo.im)](https://shimo.im/docs/XKq4MybL2bU9dKkN/read)
+
+[GitHub 协作指南.pdf](https://uploader.shimo.im/f/uP75RCfiUHJtHQYC.pdf?fileGuid=16q8MyXbRyTGNRk7)
