@@ -50,7 +50,7 @@
 
 要求范围：主要部分的 “基础篇”、“高级篇”、“移动提交记录”
 
-提交地址：[Issues · TieWay59/22-Spring-OSDD (github.com)](https://github.com/TieWay59/22-Spring-OSDD/issues)
+提交地址：[Issues · X-lab2017/22-Spring-OSDD (github.com)](https://github.com/X-lab2017/22-Spring-OSDD/issues)
 
 提交形式：在 issue 的页面开启一个新的 issue，命名格式：`Assignment-1 <学号>`。此后每完成一个任务点，就截取网页的图像发到 issue 中。（注意网页数据存储在浏览器，如果有清理浏览器缓存的习惯可能会丢失，所以请及时截图记录）
 
@@ -73,7 +73,7 @@
 1. 包含任意一篇自己任意内容的文档。
 2. 安装个性化的样式。
 
-提交地址：[Issues · TieWay59/22-Spring-OSDD (github.com)](https://github.com/TieWay59/22-Spring-OSDD/issues)
+提交地址：[Issues · X-lab2017/22-Spring-OSDD (github.com)](https://github.com/X-lab2017/22-Spring-OSDD/issues)
 
 提交形式：**在指定 issue 内** 评论自己 GitHub Pages 的链接与学号。
 
@@ -213,7 +213,7 @@ GSoC 项目：<https://summerofcode.withgoogle.com/programs/2022/organizations>
 
 选择项目：
 
-[Assignment-6 · Issue #27 · TieWay59/22-Spring-OSDD (github.com)](https://github.com/TieWay59/22-Spring-OSDD/issues/27)
+[Assignment-7 · Issue #27 · X-lab2017/22-Spring-OSDD (github.com)](https://github.com/X-lab2017/22-Spring-OSDD/issues/27) (#27)
 
 回复 issue 以选用项目，格式为 `<序号> <项目id> <项目名>`，例如：`3 2935735 adobe/brackets`
 
@@ -341,4 +341,4 @@ docker pull xlab-registry.cn-shanghai.cr.aliyuncs.com/opendigger/github-log-arch
 
 [开源课程实践指南 (shimo.im)](https://shimo.im/docs/XKq4MybL2bU9dKkN/read)
 
-[GitHub 协作指南.pdf](https://uploader.shimo.im/f/uP75RCfiUHJtHQYC.pdf?fileGuid=16q8MyXbRyTGNRk7)
+[GitHub 协作指南.pdf - (shimo.im)](https://uploader.shimo.im/f/uP75RCfiUHJtHQYC.pdf?fileGuid=16q8MyXbRyTGNRk7)
